@@ -1,0 +1,7 @@
+input {
+    display: flex;
+}
+
+.block-position {
+    position: fixed;
+}
