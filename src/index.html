@@ -7,75 +7,93 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <title>MyProjekt</title>
 </head>
-<body> 
-    
-  <header>
-   <nav>
-    <ul class="wrapper">
-    <li>Портфолио</li>
-    <li>Обо мне</li>
-    <li>Контакты</li> 
+<body>    
+  <header class="header">
+     <nav class="bg-blue">
+       <ul class="wrapper">
+       <li><a href="#">Портфолио</a></li>
+       <li><a href="#"> Обо мне</a></li>
+       <li><a href="#">Контакты</a></li> 
   </ul>  
- </nav>  
+</nav>  
 </header>
- 
+
 <main>
- <section>
-  <div class="wrapper section_main">
-    
-  <div class="main_block">
+  <section class="bg-blue">
+     <div class="wrapper section_info"> 
+       <div class="info__left">
+         <div class="info__title">
+          <h1 class="title">Меня зовут Иса</h1>
+          </div>
+        <div class="info__text">
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+   </div>
+</div> 
 
-   <div class="section_main__block">
-    <h1 class="section_main__title">Меня зовут Алибек</h1>
-     </div>
-      <div class="section_main__text">
-      <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-     </div>
-    </div> 
-
-   <div class="section_img">
+<div class="info_img">
   <img class="img" src="img/My-img.png" alt="img">
- </div>
+  </div>
 </div>
 </section>
    
-<div class="wrapper section_portfolio">
-
-   <div class="section_portfolio__block">
-  <h1 class="section_portfolio__title">Портфолио</h1>
- </div> 
- <div class="section_arrows">
-<div class="section_portfolio__text">
- <p class="sect_text">AI DIGITAL CORPORATE PRESENTATION TEMPLATE</p>  
-  </div>
-    <div class="arrows_block">
-      <img class="img_arws" src="img/Vector (1).png" alt="">
-      <img class="img_arws" src="img/Vector.png" alt="">
+<section class="wrapper">
+  <div class="my_portfolio">
+    <h1 class="my_portfolio__title">Портфолио</h1>
+     </div> 
+        <div class="my_portfolio__block">
+        <div class="my_portfolio__text">
+        <p class="left_text">AI DIGITAL CORPORATE PRESENTATION TEMPLATE</p>  
     </div>
+    <div class="arrows">
+        <img class="img_arrows" src="img/Vector (1).png" alt="">
+        <img class="img_arrows" src="img/Vector.png" alt="">
    </div>
+  </div>
  
-  <div class="section_block"> 
+<div class="my_portfolio__section"> 
+ <div class="my_portfolio__img">
+  <img class="img-two" src="img/slide.png" alt="">
+   </div> 
 
- <div class="section_block__img">
-<img class="img_two" src="img/Снимок экрана 1445-02-21 в 1.01 1.png" alt="">
- </div> 
+<div class="my_portfolio__text">
 
-   <div class="section_block__text">
-    <span class="sect_text-two">
-    ux / ui design<br>
-     <hr>
-    development<br>
-     <hr>
-    adaptives for tablet and phone<br>
-     <hr>
-    animation support <br>
-     <hr>
-    </span>
-   <button class="btn">Посмотреть</button>
+<div class="line-block">
+ux / ui design
+<div class="line"></div>
+</div>  
+
+<div class="line-block">
+development
+<div class="line"></div>  
+</div>
+
+<div class="line-block">
+adaptives for tablet and phone
+<div class="line"></div>
+</div>  
+
+<div class="line-block">
+animation support
+<div class="line"></div> 
+</div>
+
+<button class="btn">Посмотреть</button>
+</div>
+</div>
+</section>
+
+<section class="bg-blue">
+  <div class="wrapper about_me">
+      <div class="about_me_text">
+         <h1 class="about_me__title">Обо мне</h1> 
+         <p class="about_me__text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  scrambled it to make a type specimen book.</p>
     </div>
-     </div>
-    </div>
-   </main>
+<div class="about_me__img">
+<img class="about-img" src="img/photo.png" alt="">
+  </div>
+ </div>
+</section>
 
+</main>
 </body>
 </html>

@@ -6,6 +6,10 @@ main {
    background-color:#F1F1F1;
 }
 
+.bg-blue {
+   background-color: rgba(49, 58, 95, 1); 
+}
+
 .wrapper {
    width: 1360px;
    margin-inline: auto;
@@ -15,7 +19,6 @@ main {
 nav {
    padding-top: 45px; 
    padding-bottom: 120px;
-   background-color: rgba(49, 58, 95, 1); 
 }
 
 nav ul {
@@ -28,30 +31,34 @@ nav ul {
    color: #fff;
 }
 
-.section_main {
+ li a {
+   color: #FFF;
+   text-decoration: none;
+}
+
+.section_info {
    display: flex;
    gap: 190px;
 }
 
-section {
-   background-color: rgba(49, 58, 95, 1); 
-}
-
-.main_block {
+.info__left {
    width: 455px;
 }
 
-.section_main__block {
+.info__title {
+   color: #FFF;
    font-size: 35px;
-   color: #fff;
+   font-style: normal;
+   font-weight: 500px;
+   line-height: normal;
 }
 
-.section_main__title {
+.title {
    margin: 0;
    font-weight: 500;
 }
 
-.section_main__text {
+.info__text {
    width: 430px;
    color: #FFF;
    text-align: justify;
@@ -71,21 +78,21 @@ img {
    width: 475px;
 }
 
-.section_block {
+.my_portfolio {
+   width: 400px;
+}
+
+.my_portfolio__section {
    display: flex;
    gap: 70px;
 }
 
-.section_portfolio__block {
-   width: 400px;
-}
-
-.section_arrows {
-   height: 90px;
+.my_portfolio__block {
    display: flex;
+   height: 90px;
    align-items: center;
    justify-content: space-between;
-   padding-bottom: 90px;
+   margin-bottom: 90px;
 }
 
 .arrows_block {
@@ -93,27 +100,27 @@ img {
    height: 20px;
 }
 
-.img_arws {
+.img_arrows {
    width: 60px;
    padding-right: 20px;
 }
 
-.section_portfolio__title {
+.my_portfolio__title {
    color: #000;
    font-size: 70px;
    font-style: normal;
    font-weight: 500;
    line-height: normal;
    margin: 0;
-   padding-top: 100px;
-   padding-bottom: 80px;
+   margin-top: 100px;
+   margin-bottom: 80px;
 }
 
-.section_portfolio__text {
+.my_portfolio__text {
    width: 570px;
 }
 
-.sect_text {
+.left_text {
    color: #000;
    font-size: 32px;
    font-style: normal;
@@ -122,13 +129,19 @@ img {
    margin: 0;
 }
 
-.section_block__text {
-   width: 470px;
+.line {
+   width: 475px;
+   height: 2px;
+   background: #313A5F;
 }
 
-.sect_text-two {
-   color: #001;
-   font-size: 32px;   
+.line-block {
+   margin-bottom: 33px;
+}
+
+.my_portfolio__text {
+   color: #000;
+   font-size: 32px; 
    font-style: normal;
    font-weight: 500;
    line-height: normal;
@@ -144,14 +157,45 @@ img {
    font-weight: 500;
    margin-top: 35px;
    margin-bottom: 150px;
+   cursor: pointer;
 }
 
-.img_two {
+.btn:hover {
+   background-color:rgba(65, 76, 121, 1);
+   transition: 1s;
+}
+
+.img-two {
    width: 570px;
 }
 
-hr {
-   margin-top: 0;
-   border: 1px solid rgba(49, 58, 95, 1);
-   margin-bottom: 33px;
+.about_me {
+   display: flex;
+   gap: 100px;
+   align-items: center;
+}
+
+.about_me__title {
+   color: #FFF;
+   font-size: 74px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   margin-bottom: 70px;
+}
+
+.about_me__text-left {
+   width: 550px;
+   color: #FFF;
+   text-align: justify;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 136.295%;
+   margin-bottom: 150px;
+}
+
+.about_me__img img {
+   width: 375px;
+   margin: 125px 0px 80px 0px;
 }
