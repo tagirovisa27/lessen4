@@ -10,15 +10,17 @@ main {
    background-color: rgba(49, 58, 95, 1); 
 }
 
-.wrapper {
-   width: 1360px;
-   margin-inline: auto;
-   max-width: 1120px;
+html {
+   scroll-behavior: smooth;
 }
 
-nav {
-   padding-top: 45px; 
-   padding-bottom: 120px;
+.nav-menu {
+   padding-top: 40px;
+}
+
+.wrapper {
+   margin-inline: auto;
+   max-width: 1120px;
 }
 
 nav ul {
@@ -38,7 +40,9 @@ nav ul {
 
 .section_info {
    display: flex;
-   gap: 190px;
+   gap: 15%;
+   padding-top: 40px;
+   padding-bottom: 100px;
 }
 
 .info__left {
@@ -55,6 +59,7 @@ nav ul {
 
 .title {
    margin: 0;
+   padding-bottom: 50px;
    font-weight: 500;
 }
 
@@ -65,13 +70,11 @@ nav ul {
    font-size: 32px;
    font-style: normal;
    font-weight: 400px;
-   padding-top: 40px;
    line-height: 45px
 }
 
 .text {
    margin: 0;
-   padding-bottom: 225px;
 }
 
 img {
@@ -80,24 +83,27 @@ img {
 
 .my_portfolio {
    width: 400px;
+   margin-top: 100px;
 }
 
 .my_portfolio__section {
    display: flex;
+   align-items: center;
    gap: 70px;
+   margin-bottom: 200px;
 }
 
 .my_portfolio__block {
    display: flex;
-   height: 90px;
    align-items: center;
    justify-content: space-between;
    margin-bottom: 90px;
 }
 
-.arrows_block {
-   width: 165px;
-   height: 20px;
+.my_portfolio_arrows {
+  position: absolute;
+  margin-left: 960px;
+  margin-top: 30px;
 }
 
 .img_arrows {
@@ -111,13 +117,12 @@ img {
    font-style: normal;
    font-weight: 500;
    line-height: normal;
-   margin: 0;
-   margin-top: 100px;
    margin-bottom: 80px;
+   margin-top: 0;
 }
 
 .my_portfolio__text {
-   width: 570px;
+   width: 480px;
 }
 
 .left_text {
@@ -130,13 +135,8 @@ img {
 }
 
 .line {
-   width: 475px;
-   height: 2px;
-   background: #313A5F;
-}
-
-.line-block {
-   margin-bottom: 33px;
+   border-bottom: 2px solid #313A5F;
+   margin-bottom: 30px;
 }
 
 .my_portfolio__text {
@@ -147,20 +147,18 @@ img {
    line-height: normal;
 }
 
-.btn {
-   width: 250px;
-   height: 70px;
+.btn_portfolio {
    border-radius: 44px;
    background: #313A5F;
    color: #FFF;
    font-size: 24px;
    font-weight: 500;
-   margin-top: 35px;
-   margin-bottom: 150px;
+   margin-top: 30px;
+   padding: 24px 106px;
    cursor: pointer;
 }
 
-.btn:hover {
+.btn_portfolio:hover {
    background-color:rgba(65, 76, 121, 1);
    transition: 1s;
 }
@@ -173,6 +171,8 @@ img {
    display: flex;
    gap: 100px;
    align-items: center;
+   padding-top: 50px;
+   padding-bottom: 100px;
 }
 
 .about_me__title {
@@ -182,6 +182,7 @@ img {
    font-weight: 500;
    line-height: normal;
    margin-bottom: 70px;
+   margin-top: 0;
 }
 
 .about_me__text-left {
@@ -192,10 +193,113 @@ img {
    font-style: normal;
    font-weight: 400;
    line-height: 136.295%;
-   margin-bottom: 150px;
+   margin: 0;
 }
 
-.about_me__img img {
-   width: 375px;
-   margin: 125px 0px 80px 0px;
+.about-img {
+   width: 375px;  
+   margin-top: 50px;
+}
+
+.contacts_title {
+   width: 640px;
+   margin: 0 auto;
+}
+
+.title-tree {
+   color: #000;
+   font-size: 74px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   text-align: center;
+   margin-top: 80px;
+   margin-bottom: 80px;
+}
+
+.contacts_subtitle {
+   width: 485px;
+   margin: 0 auto;
+}
+
+.subtitle {
+   color: #000;
+   text-align: center;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-top: 50px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+   width: 750px;
+   padding: 15px;
+   border-radius: 58px;
+   border: 2px solid #313A5F;
+   padding-left: 30px;
+}
+
+.btn_contacts {
+  width: 790px; 
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 58px;
+  border: 2px solid #313A5F;
+  background: #313A5F;
+  color: #FFF;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.btn_contacts:hover {
+   background-color:rgba(65, 76, 121, 1);
+   transition: 1s; 
+}
+
+.contacts_subtitle__two {
+   width: 555px;
+   margin: 0 auto;
+}
+
+.subtitle_two {
+   color: #000;
+   text-align: center;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+.footer_contact {
+   display: flex;
+   align-items: center;
+   gap: 155px;
+}
+
+.network {
+   color: #000;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal; 
+   margin-bottom: 60px;   
+}
+
+.network a {
+   text-decoration: none;
+   color: #000;
 }
